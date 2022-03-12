@@ -33,12 +33,6 @@ export default {
 	methods: {
 		orderIsDone() {
 			this.$store.state.orderPrice = 0;
-			this.$store.getters.allSoupsPrices.length = 0;
-			this.$store.getters.allSaladsPrices.length = 0;
-			this.$store.getters.allHotSnacksPrices.length = 0;
-			this.$store.getters.allColdSnacksPrices.length = 0;
-			this.$store.getters.allDessertsPrices.length = 0;
-			this.$store.getters.allDrinksPrices.length = 0;
 		},
 	},
 };

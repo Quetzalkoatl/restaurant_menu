@@ -21,6 +21,11 @@ export default {
 			this.$store.commit('setDrinksPrice');
 			this.$store.state.orderPrice +=
 				this.$store.getters.allDrinksPrices[index];
+
+			this.$store.getters.allDrinksPrices.splice(
+				this.$store.getters.drinksLength,
+				this.$store.getters.drinksLength
+			);
 		},
 	},
 };

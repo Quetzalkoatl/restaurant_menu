@@ -21,6 +21,11 @@ export default {
 			this.$store.commit('setSaladPrice');
 			this.$store.state.orderPrice +=
 				this.$store.getters.allSaladsPrices[index];
+
+			this.$store.getters.allSaladsPrices.splice(
+				this.$store.getters.saladsLength,
+				this.$store.getters.saladsLength
+			);
 		},
 	},
 };

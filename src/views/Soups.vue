@@ -20,6 +20,11 @@ export default {
 		addToTheOrder(index) {
 			this.$store.commit('setSoupPrice');
 			this.$store.state.orderPrice += this.$store.getters.allSoupsPrices[index];
+
+			this.$store.getters.allSoupsPrices.splice(
+				this.$store.getters.soupsLength,
+				this.$store.getters.soupsLength
+			);
 		},
 	},
 };

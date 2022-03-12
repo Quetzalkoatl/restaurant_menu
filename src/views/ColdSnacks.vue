@@ -21,6 +21,11 @@ export default {
 			this.$store.commit('setColdSnacksPrice');
 			this.$store.state.orderPrice +=
 				this.$store.getters.allColdSnacksPrices[index];
+
+			this.$store.getters.allColdSnacksPrices.splice(
+				this.$store.getters.coldSnacksLength,
+				this.$store.getters.coldSnacksLength
+			);
 		},
 	},
 };

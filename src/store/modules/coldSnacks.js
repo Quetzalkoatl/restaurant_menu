@@ -46,5 +46,8 @@ export default {
 		allColdSnacksPrices(state) {
 			return state.allColdSnacksPrices;
 		},
+		coldSnacksLength(state) {
+			return state.coldSnacks.length;
+		},
 	},
 };

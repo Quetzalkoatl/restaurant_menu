@@ -21,6 +21,11 @@ export default {
 			this.$store.commit('setDessertsPrice');
 			this.$store.state.orderPrice +=
 				this.$store.getters.allDessertsPrices[index];
+
+			this.$store.getters.allDessertsPrices.splice(
+				this.$store.getters.dessertsLength,
+				this.$store.getters.dessertsLength
+			);
 		},
 	},
 };

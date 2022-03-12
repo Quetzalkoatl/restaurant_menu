@@ -46,5 +46,8 @@ export default {
 		allSaladsPrices(state) {
 			return state.allSaladsPrices;
 		},
+		saladsLength(state) {
+			return state.salads.length;
+		},
 	},
 };

@@ -46,5 +46,8 @@ export default {
 		allSoupsPrices(state) {
 			return state.allSoupsPrices;
 		},
+		soupsLength(state) {
+			return state.soups.length;
+		},
 	},
 };
