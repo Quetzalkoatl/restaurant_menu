@@ -1,10 +1,11 @@
 <template>
 	<Header />
+	<router-view></router-view>
 	<div id="nav">
-		<router-link to="/">Main menu</router-link> |
-		<router-link to="/bracket">Bracket</router-link>
+		<!-- <router-link to="/">Main menu</router-link> |
+		<router-link to="/bracket">Bracket</router-link> -->
+		<!-- <router-view></router-view> -->
 	</div>
-	<router-view />
 </template>
 
 <script>

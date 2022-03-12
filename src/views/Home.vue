@@ -1,5 +1,5 @@
 <template>
-	<p>Main menu options</p>
+	<p>Добро пожаловать в ресторан</p>
 </template>
 
 <script></script>
