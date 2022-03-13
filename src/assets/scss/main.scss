@@ -7,10 +7,30 @@ html {
 	background-color: rgb(39, 39, 39);
 }
 
+.welcome {
+	color: white;
+	margin: auto;
+	display: flex;
+}
+
+.welcome-image {
+	width: 1000px;
+	margin: auto;
+}
+
 .menu-title {
+	font-family: $MainFont;
 	font-size: 40px;
 	text-align: center;
 	color: white;
+	margin-top: 10px;
+	&:hover {
+		color: rgb(182, 186, 204);
+		cursor: pointer;
+	}
+}
+.router-to-main-page {
+	text-decoration: none;
 }
 
 .header {
@@ -49,6 +69,12 @@ html {
 	color: white;
 	margin-top: 30px;
 	margin-bottom: 15px;
+	&:hover {
+		background-color: rgb(78, 107, 170);
+	}
+	&:active {
+		background-color: rgb(55, 76, 121);
+	}
 }
 
 .btn-order {
@@ -58,9 +84,34 @@ html {
 	width: 180px;
 	border: none;
 	border-radius: 10px;
-	background-color: rgb(106, 148, 238);
+	background-color: rgb(73, 102, 66);
 	color: white;
 	margin-top: 10px;
+	&:hover {
+		background-color: rgb(58, 80, 52);
+	}
+	&:active {
+		background-color: rgb(48, 66, 43);
+	}
+}
+
+.btn-abort {
+	font-size: 17px;
+
+	height: 30px;
+	width: 180px;
+	border: none;
+	border-radius: 10px;
+	background-color: rgb(102, 66, 66);
+	color: white;
+	margin-top: 10px;
+	margin-left: 10px;
+	&:hover {
+		background-color: rgb(82, 53, 53);
+	}
+	&:active {
+		background-color: rgb(59, 39, 39);
+	}
 }
 
 .card {
@@ -88,12 +139,12 @@ html {
 
 .card-name {
 	color: white;
-	font-size: 40px;
+	font-size: 30px;
 	padding: 15px 0;
 }
 
 .card-cost {
-	font-size: 30px;
+	font-size: 25px;
 	color: rgb(228, 90, 90);
 	padding-top: 10px;
 }
@@ -106,4 +157,165 @@ html {
 .order {
 	font-size: 20px;
 	color: rgb(228, 90, 90);
+	margin-top: 10px;
+	margin-right: 10px;
+}
+
+//Popup
+.popup {
+	position: fixed;
+	min-height: 100vh;
+	min-width: 100vw;
+	background-color: rgba(0, 0, 0, 0.7);
+}
+
+.popup-inner {
+	width: 500px;
+	height: 500px;
+	margin: auto;
+	background-color: rgb(66, 66, 66);
+	border-radius: 15px;
+	border: 3px solid rgb(131, 131, 131);
+	display: flex;
+	flex-direction: column;
+	&:first-child {
+		margin-top: 170px;
+	}
+	z-index: 99;
+}
+
+.popup-text {
+	margin-top: 140px;
+	font-size: 40px;
+	color: white;
+	align-self: center;
+}
+
+.btn-popup {
+	font-size: 20px;
+
+	align-self: center;
+	height: 55px;
+	width: 340px;
+	border: none;
+	border-radius: 10px;
+	background-color: rgb(106, 148, 238);
+	color: white;
+	margin-top: 30px;
+	margin-bottom: 15px;
+	&:hover {
+		background-color: rgb(78, 107, 170);
+	}
+	&:active {
+		background-color: rgb(55, 76, 121);
+	}
+}
+
+.popup-sum {
+	font-size: 35px;
+	color: rgb(228, 90, 90);
+	align-self: center;
+	padding-top: 15px;
+}
+
+//Media
+@media only screen and (max-width: 1280px) {
+	.card {
+		max-width: 60vw;
+	}
+	.card-name {
+		font-size: 20px;
+	}
+	.card-title {
+		width: 250px;
+	}
+	.card-cost {
+		font-size: 18px;
+	}
+	.btn {
+		font-size: 16px;
+
+		height: 40px;
+		width: 180px;
+		margin-top: 20px;
+		margin-bottom: 10px;
+	}
+	.card-desc {
+		margin-left: 5%;
+	}
+	.links {
+		font-size: 15px;
+	}
+	.welcome-image {
+		width: 800px;
+	}
+}
+
+@media only screen and(max-width: 800px) {
+	.card {
+		flex-direction: column;
+		max-width: 50vw;
+		margin-top: 50px;
+	}
+	.card-title {
+		width: 180px;
+		align-self: center;
+	}
+	.card-name {
+		font-size: 18px;
+		align-self: center;
+	}
+	.card-cost {
+		font-size: 15px;
+		align-self: center;
+	}
+	.btn {
+		align-self: center;
+	}
+	.card-desc {
+		display: flex;
+		margin: auto;
+	}
+	.links {
+		display: grid;
+		margin-bottom: 50px;
+	}
+	.link {
+		font-size: 15px;
+		padding: 5px;
+		margin: auto;
+	}
+	.header {
+		height: 250px;
+	}
+	.order {
+		font-size: 13px;
+		margin-right: 10px;
+	}
+	.welcome-image {
+		width: 350px;
+	}
+	.popup-inner {
+		width: 300px;
+		height: 300px;
+	}
+	.popup-text {
+		margin-top: 75px;
+		font-size: 25px;
+		color: white;
+		align-self: center;
+	}
+	.popup-sum {
+		font-size: 25px;
+	}
+	.btn-popup {
+		height: 35px;
+		width: 200px;
+	}
+	.btn-order {
+		display: block;
+	}
+	.btn-abort {
+		margin-left: 0;
+	}
 }

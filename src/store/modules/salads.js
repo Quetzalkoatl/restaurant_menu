@@ -3,7 +3,7 @@ export default {
 		salads: [
 			{
 				id: 1,
-				name: 'Салат с фасолью и говядиной',
+				name: 'Салат с говядиной',
 				cost: 16,
 				url: require('@/assets/img/salads/beans-beef-salad.png'),
 			},

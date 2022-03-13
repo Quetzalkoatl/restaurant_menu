@@ -6,7 +6,6 @@ import HotSnacks from '../views/HotSnacks.vue';
 import ColdSnacks from '../views/ColdSnacks.vue';
 import Desserts from '../views/Desserts.vue';
 import Drinks from '../views/Drinks.vue';
-// import Bracket from '../views/Bracket.vue';
 
 const routes = [
 	{
