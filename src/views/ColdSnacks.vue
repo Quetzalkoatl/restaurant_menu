@@ -22,10 +22,7 @@ export default {
 			this.$store.state.orderPrice +=
 				this.$store.getters.allColdSnacksPrices[index];
 
-			this.$store.getters.allColdSnacksPrices.splice(
-				this.$store.getters.coldSnacksLength,
-				this.$store.getters.coldSnacksLength
-			);
+			this.$store.getters.allColdSnacksPrices.length = 0;
 		},
 	},
 };
