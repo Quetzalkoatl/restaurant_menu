@@ -1,8 +1,10 @@
 <template>
-	<div class="" v-for="(item, index) in coldSnacksList" :key="item.id">
-		<Card :url="item.url" :name="item.name" :cost="item.cost">
-			<button class="btn" @click="addToTheOrder(index)">Заказать</button>
-		</Card>
+	<div class="card-wrapper">
+		<div class="" v-for="(item, index) in coldSnacksList" :key="item.id">
+			<Card :url="item.url" :name="item.name" :cost="item.cost">
+				<button class="btn" @click="addToTheOrder(index)">Заказать</button>
+			</Card>
+		</div>
 	</div>
 </template>
 

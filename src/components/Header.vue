@@ -15,7 +15,7 @@
 			</router-link>
 
 			<div class="order">
-				<p>ОБЩАЯ ЦЕНА ЗАКАЗА: {{ orderPrice }}</p>
+				<p class="order-price">ОБЩАЯ ЦЕНА ЗАКАЗА: {{ orderPrice }}</p>
 				<button class="btn-order" @click="orderIsDone">Оформить заказ</button>
 				<button class="btn-abort" @click="orderIsAbort">Отменить заказ</button>
 			</div>
